@@ -1,0 +1,15 @@
+.grid {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
