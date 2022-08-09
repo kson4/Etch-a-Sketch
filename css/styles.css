@@ -1,5 +1,13 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .grid {
     display: flex;
+    background-color: red;
 }
 
 .row {
@@ -12,4 +20,10 @@
     width: 100px;
     height: 100px;
     text-align: center;
+    transition: background-color 500ms linear;
+    border: 1px solid green;
+}
+
+.cell:hover {
+    background-color: green;
 }
