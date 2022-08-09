@@ -5,9 +5,22 @@
     margin-bottom: 30px;
 }
 
-.grid {
+/* .bottom {
     display: flex;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 800px;
+    flex: 1;
+} */
+
+#grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* background-color: red; */
 }
 
 .row {
@@ -19,8 +32,9 @@
     display: flex;
     width: 100px;
     height: 100px;
+    aspect-ratio: 1 / 1;
     text-align: center;
-    transition: background-color 500ms linear;
+    transition: background-color 100ms linear;
     border: 1px solid green;
 }
 

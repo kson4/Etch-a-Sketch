@@ -10,6 +10,7 @@ button[0].onclick = function() {
 
 function makeGrid(size) {
     let id = 0;
+    let cellSize = 500/size + "px";
     for (let row = 0; row < size; row++) {
         let rows = document.createElement("div");
         rows.setAttribute("class", "row");
@@ -19,6 +20,8 @@ function makeGrid(size) {
             let cell = document.createElement("div");
             cell.setAttribute("id", id++);
             cell.setAttribute("class", "cell");
+            cell.style.width = cellSize;
+            cell.style.height = cellSize;
             cell.style.display = "inline";
             rows.appendChild(cell);
         }
